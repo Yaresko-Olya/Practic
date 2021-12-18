@@ -1,152 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calendar</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Календарь</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="stule.css" rel="stylesheet" >
 </head>
-
 <body>
-    <div class="container">
-        <table class="calendar">
-            <thead class="calendar__head">
-                <tr class="calendar__row">
-                    <th class="calendar__week">Sun</th>
-                    <th class="calendar__week">Mon</th>
-                    <th class="calendar__week">Tue</th>
-                    <th class="calendar__week">Wen</th>
-                    <th class="calendar__week">Thu</th>
-                    <th class="calendar__week">Fri</th>
-                    <th class="calendar__week">Sat</th>
-                </tr>
-            </thead>
-            <tbody class="calendar__body">
-                <tr class="calendar__row">
-                    <td class="calendar__day calendar__day_disabled">
-                        <input type="radio" id="day1" name="day" class="calendar__radio">
-                        <label for="day1" class="calendar__label">27</label>
-                    </td>
-                    <td class="calendar__day calendar__day_disabled">
-                        <input type="radio" id="day2" name="day" class="calendar__radio">
-                        <label for="day2" class="calendar__label">28</label>
-                    </td>
-                    <td class="calendar__day calendar__day_disabled">
-                        <input type="radio" id="day3" name="day" class="calendar__radio">
-                        <label for="day3" class="calendar__label">29</label>
-                    </td>
-                    <td class="calendar__day calendar__day_disabled">
-                        <input type="radio" id="day4" name="day" class="calendar__radio">
-                        <label for="day4" class="calendar__label">30</label>
-                    </td>
-                    <td class="calendar__day calendar__day_disabled">
-                        <input type="radio" id="day5" name="day" class="calendar__radio">
-                        <label for="day5" class="calendar__label">31</label>
-                    </td>
-                    <td class="calendar__day">
-                        <input type="radio" id="day6" name="day" class="calendar__radio">
-                        <label for="day6" class="calendar__label">1</label>
-                    </td>
-                    <td class="calendar__day calendar__day_off">
-                        <input type="radio" id="day7" name="day" class="calendar__radio">
-                        <label for="day7" class="calendar__label">2</label>
-                    </td>
-                </tr>
-                <tr class="calendar__row">
-                    <td class="calendar__day calendar__day_off">
-                        <input type="radio" id="day8" name="day" class="calendar__radio">
-                        <label for="day8" class="calendar__label">3</label></td>
-                    <td class="calendar__day">
-                        <input type="radio" id="day9" name="day" class="calendar__radio">
-                        <label for="day9" class="calendar__label">4</label></td>
-                    <td class="calendar__day">
-                        <input type="radio" id="day10" name="day" class="calendar__radio">
-                        <label for="day10" class="calendar__label">5</label></td>
-                    <td class="calendar__day">
-                        <input type="radio" id="day11" name="day" class="calendar__radio">
-                        <label for="day11" class="calendar__label">6</label></td>
-                    <td class="calendar__day">
-                        <input type="radio" id="day12" name="day" class="calendar__radio">
-                        <label for="day12" class="calendar__label">7</label></td>
-                    <td class="calendar__day">
-                        <input type="radio" id="day13" name="day" class="calendar__radio">
-                        <label for="day13" class="calendar__label">8</label></td>
-                    <td class="calendar__day calendar__day_off">
-                        <input type="radio" id="day14" name="day" class="calendar__radio">
-                        <label for="day14" class="calendar__label">9</label></td>
-                </tr>
-                <tr class="calendar__row">
-                    <td class="calendar__day calendar__day_off"><input type="radio" id="day15" name="day" class="calendar__radio"><label
-                            for="day15" class="calendar__label">10</label></td>
-                    <td class="calendar__day"><input type="radio" id="day16" name="day" class="calendar__radio"><label
-                            for="day16" class="calendar__label">11</label></td>
-                    <td class="calendar__day"><input type="radio" id="day17" name="day" class="calendar__radio"><label
-                            for="day17" class="calendar__label">12</label></td>
-                    <td class="calendar__day"><input type="radio" id="day18" name="day" class="calendar__radio"><label
-                            for="day18" class="calendar__label">13</label></td>
-                    <td class="calendar__day"><input type="radio" id="day19" name="day" class="calendar__radio"><label
-                            for="day19" class="calendar__label">14</label></td>
-                    <td class="calendar__day"><input type="radio" id="day20" name="day" class="calendar__radio"><label
-                            for="day20" class="calendar__label">15</label></td>
-                    <td class="calendar__day calendar__day_off"><input type="radio" id="day21" name="day" class="calendar__radio"><label
-                            for="day21" class="calendar__label">16</label></td>
-                </tr>
-                <tr class="calendar__row">
-                    <td class="calendar__day calendar__day_off"><input type="radio" id="day22" name="day" class="calendar__radio"><label
-                            for="day22" class="calendar__label">17</label></td>
-                    <td class="calendar__day"><input type="radio" id="day23" name="day" class="calendar__radio"><label
-                            for="day23" class="calendar__label">18</label></td>
-                    <td class="calendar__day"><input type="radio" id="day24" name="day" class="calendar__radio"><label
-                            for="day24" class="calendar__label">19</label></td>
-                    <td class="calendar__day"><input type="radio" id="day25" name="day" class="calendar__radio"><label
-                            for="day25" class="calendar__label">20</label></td>
-                    <td class="calendar__day"><input type="radio" id="day26" name="day" class="calendar__radio"><label
-                            for="day26" class="calendar__label">21</label></td>
-                    <td class="calendar__day"><input type="radio" id="day27" name="day" class="calendar__radio"><label
-                            for="day27" class="calendar__label">22</label></td>
-                    <td class="calendar__day calendar__day_off"><input type="radio" id="day28" name="day" class="calendar__radio"><label
-                            for="day28" class="calendar__label">23</label></td>
-                </tr>
-                <tr class="calendar__row">
-                    <td class="calendar__day calendar__day_off"><input type="radio" id="day29" name="day" class="calendar__radio"><label
-                            for="day29" class="calendar__label">24</label></td>
-                    <td class="calendar__day"><input type="radio" id="day30" name="day" class="calendar__radio"><label
-                            for="day30" class="calendar__label">25</label></td>
-                    <td class="calendar__day"><input type="radio" id="day31" name="day" class="calendar__radio"><label
-                            for="day31" class="calendar__label">26</label></td>
-                    <td class="calendar__day"><input type="radio" id="day32" name="day" class="calendar__radio"><label
-                            for="day32" class="calendar__label">27</label></td>
-                    <td class="calendar__day"><input type="radio" id="day33" name="day" class="calendar__radio"><label
-                            for="day33" class="calendar__label">28</label></td>
-                    <td class="calendar__day"><input type="radio" id="day34" name="day" class="calendar__radio"><label
-                            for="day34" class="calendar__label">29</label></td>
-                    <td class="calendar__day calendar__day_off"><input type="radio" id="day35" name="day" class="calendar__radio"><label
-                            for="day35" class="calendar__label">30</label></td>
-                </tr>
-                <tr class="calendar__row">
-                    <td class="calendar__day calendar__day_off"><input type="radio" id="day36" name="day" class="calendar__radio"><label
-                            for="day36" class="calendar__label">31</label></td>
-                    <td class="calendar__day calendar__day_disabled"><input type="radio" id="day37" name="day" class="calendar__radio"><label
-                            for="day37" class="calendar__label">1</label></td>
-                    <td class="calendar__day calendar__day_disabled"><input type="radio" id="day38" name="day" class="calendar__radio"><label
-                            for="day38" class="calendar__label">2</label></td>
-                    <td class="calendar__day calendar__day_disabled"><input type="radio" id="day39" name="day" class="calendar__radio"><label
-                            for="day39" class="calendar__label">3</label></td>
-                    <td class="calendar__day calendar__day_disabled"><input type="radio" id="day40" name="day" class="calendar__radio"><label
-                            for="day40" class="calendar__label">4</label></td>
-                    <td class="calendar__day calendar__day_disabled"><input type="radio" id="day41" name="day" class="calendar__radio"><label
-                            for="day41" class="calendar__label">5</label></td>
-                    <td class="calendar__day calendar__day_disabled"><input type="radio" id="day42" name="day" class="calendar__radio"><label
-                            for="day42" class="calendar__label">6</label></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</body>
+<div class = "calendar">
+       <table class="calendar__table">
+        <tr class="calendar__table__name">
+            <td colspan="7">August</td>
+        </tr>
+        <tr class="calendar__table__daysOfWeek">
+            <td>Sun</td>
+            <td>Mon</td>
+            <td>Tue</td>
+            <td>Wed</td>
+            <td>Thu</td>
+            <td>Fri</td>
+            <td>Sat</td>
+        </tr>
+        <tr class="days">
+            <td class="lastOrNextMonth">27</td>
+            <td class="lastOrNextMonth">28</td>
+            <td class="lastOrNextMonth">29</td>
+            <td class="lastOrNextMonth">30</td>
+            <td class="lastOrNextMonth">31</td>
+            <td class="currentMonth">
+                <input type="radio" name="day" class="currentMonth__input" id="radio-1">
+                <label for="radio-1" class="currentMonth__label">1</label>
+            </td>
+            <td class="currentMonth">
+                <input type="radio" name="day" class="currentMonth__input" id="radio-2">
+                <label for="radio-2" class="currentMonth__label--weekend">2</label>
+            </td>
+        </tr>
+        <tr class="days">
+            <td class="currentMonth">
+                <input type="radio" name="day" class="currentMonth__input" id="radio-3">
+                <label for="radio-3" class="currentMonth__label--weekend">3</label>
+            </td>
+            <td class='currentMonth'>
+                <input type="radio" name="day" class="currentMonth__input" id="radio-4">
+                <label for="radio-4" class='currentMonth__label'>4</label>
+            </td>
+            <td class='currentMonth'>
+                <input type="radio" name="day" class="currentMonth__input" id="radio-5">
+                <label for="radio-5" class='currentMonth__label'>5</label>
+            </td>
+            <td class='currentMonth'>
+                <input type="radio" name="day" class="currentMonth__input" id="radio-6">
+                <label for="radio-6" class='currentMonth__label'>6</label>
+            </td>
+            <td class='currentMonth'>
+                <input type="radio" name="day" class="currentMonth__input" id="radio-7">
+                <label for="radio-7" class='currentMonth__label'>7</label>
+            </td>
+            <td class='currentMonth'>
+                <input type="radio" name="day" class="currentMonth__input" id="radio-8">
+                <label for="radio-8" class='currentMonth__label'>8</label>
+            </td>
+            <td class='currentMonth'>
+                <input type="radio" name="day" class="currentMonth__input" id="radio-9">
+                <label for="radio-9" class="currentMonth__label--weekend">9</label>
+            </td>
+        </tr>
+        <tr class='days'>
+            <td class='currentMonth'>
+                <input type="radio" name='day' class='currentMonth__input' id="radio-10">
+                <label for="radio-10" class='currentMonth__label--weekend'>10</label>
+            </td>
+            <td class='currentMonth'>
+                <input type="radio" name='day' class='currentMonth__input' id="radio-11">
+                <label for="radio-11" class='currentMonth__label'>11</label>
+            </td>
+            <td class='currentMonth'>
+                <input type="radio" name='day' class='currentMonth__input' id="radio-12">
+                <label for="radio-12" class='currentMonth__label'>12</label>
+            </td>
+            <td class='currentMonth'>
+                <input type="radio" name='day' class='currentMonth__input' id="radio-13">
+                <label for="radio-13" class='currentMonth__label'>13</label>
+            </td>
+            <td class='currentMonth'>
+                <input type="radio" name='day' class='currentMonth__input' id="radio-14">
+                <label for="radio-14" class='currentMonth__label'>14</label>
+            </td>
+            <td class='currentMonth'>
+                <input type="radio" name='day' class='currentMonth__input' id="radio-15">
+                <label for="radio-15" class='currentMonth__label'>15</label>
+            </td>
+            <td class='currentMonth'>
+                <input type="radio" name='day' class='currentMonth__input' id="radio-16">
+                <label for="radio-16" class='currentMonth__label--weekend'>16</label>
+            </td>
+        </tr>
+        <tr class='days'>
+            <td class='currentMonth'>
+                <input type="radio" name='day' class='currentMonth__input' id="radio-17">
+                <label for="radio-17" class='currentMonth__label--weekend'>17</label>
+            </td>
+            <td class='currentMonth'>
+                <input type="radio" name='day' class='currentMonth__input' id="radio-18">
+                <label for="radio-18" class='currentMonth__label'>18</label>
+            </td>
+            <td class='currentMonth'>
+                <input type="radio" name='day' class='currentMonth__input' id="radio-19">
+                <label for="radio-19" class='currentMonth__label'>19</label>
+            </td>
+            <td class='currentMonth'>
+                <input type="radio" name='day' class='currentMonth__input' id="radio-20">
+                <label for="radio-20" class='currentMonth__label'>20</label>
+            </td>
+            <td class='currentMonth'>
+                <input type="radio" name='day' class='currentMonth__input' id="radio-21">
+                <label for="radio-21" class='currentMonth__label'>21</label>
+            </td>
+            <td class='currentMonth'>
+                <input type="radio" name='day' class='currentMonth__input' id="radio-22">
+                <label for="radio-22" class='currentMonth__label'>22</label>
+            </td>
+            <td class='currentMonth'>
+                <input type="radio" name='day' class='currentMonth__input' id="radio-23">
+                <label  for="radio-23" class='currentMonth__label--weekend'>23</label>
+            </td>
+        </tr>
+        <tr class='days'>
+            <td class='currentMonth'>
+                <input type="radio" name='day' class='currentMonth__input' id="radio-24">
+                <label for="radio-24" class='currentMonth__label holiday__label--weekend'>24</label>
+            </td>
+            <td class='currentMonth'>
+                <input type="radio" name='day' class='currentMonth__input' id="radio-25">
+                <label for="radio-25" class='currentMonth__label'>25</label>
+            </td>
+            <td class='currentMonth'>
+                <input type="radio" name='day' class='currentMonth__input' id="radio-26">
+                <label for="radio-26" class='currentMonth__label'>26</label>
+            </td>
+            <td class='currentMonth'>
+                <input type="radio" name='day' class='currentMonth__input' id="radio-27">
+                <label for="radio-27" class='currentMonth__label'>27</label>
+            </td>
+            <td class='currentMonth'>
+                <input type="radio" name='day' class='currentMonth__input' id="radio-28">
+                <label for="radio-28" class='currentMonth__label'>28</label>
+            </td>
+            <td class='currentMonth'>
+                <input type="radio" name='day' class='currentMonth__input' id="radio-29">
+                <label for="radio-29" class='currentMonth__label'>29</label>
+            </td>
+            <td class='currentMonth'>
+                <input type="radio" name='day' class='currentMonth__input' id="radio-30">
+                <label for="radio-30" class='currentMonth__label--weekend'>30</label>
+            </td>
+        </tr>
+        <tr class="days">
+            <td class="currentMonth">
+                <input type="radio" name="day" class="currentMonth__input" id="radio-31">
+                <label for="radio-31" class="currentMonth__label--weekend">31</label>
+            </td>
+            <td class="lastOrNextMonth">1</td>
+            <td class="lastOrNextMonth">2</td>
+            <td class="lastOrNextMonth">3</td>
+            <td class="lastOrNextMonth">4</td>
+            <td class="lastOrNextMonth">5</td>
+            <td class="lastOrNextMonth">6</td>
+        </tr>
+    </table>
 
+
+    
+</div>
+</body>
 </html>
